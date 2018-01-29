@@ -70,8 +70,12 @@ Your task is complete the 4 Bluetooth LE projects and learn how it operates as a
 1. Assemble the BLE Smart Switch. 
 </p> 
  <ul>
-  <li> 1. Use this <a href+https://raw.githubusercontent.com/MakeBluetooth/smart-light-switch/master/ble-smart-switch.png> diagram </a> to build 
+  <li> 1. Use this <a href=https://raw.githubusercontent.com/MakeBluetooth/smart-light-switch/master/ble-smart-switch.png> diagram </a> to build 
    your first project.</li>
+  <li>Open the Bluetooth app on your phone(LightBlue or nRF) and connect to your Smart Switch.  The switch will be in a Read/Write and State, which is 
+   Notify.  IF you go to the switch characteristics screen, which should be 0X00, meaning the LED is off, tap write new value to open the editor.  Enter 01 and hit 
+   Done.  The LED should turn on and the value should be 0x01.  If you open the Serial Console you should see a Characteristic event.  If everything works, move on. </li>
+ </ul>
 <p>
 2. Add a second musical song to the robot.  
 </p>
