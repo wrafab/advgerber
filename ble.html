@@ -67,24 +67,45 @@ Your task is complete the 4 Bluetooth LE projects and learn how it operates as a
  <br>
  <h4> The Bluetooth LE Projects </h4>
 <p>
-1. Assemble the BLE Smart Switch. 
+1. Assemble the BLE Smart Switch 
 </p> 
  <ul>
-  <li> 1. Use this <a href=https://raw.githubusercontent.com/MakeBluetooth/smart-light-switch/master/ble-smart-switch.png> diagram </a> to build 
-   your first project.</li>
+  <li>Use this <a href=https://raw.githubusercontent.com/MakeBluetooth/smart-light-switch/master/ble-smart-switch.png> diagram </a> to build 
+   your first project.  220 resistor to LED and 10K to switch</li>
   <li>Open the Bluetooth app on your phone(LightBlue or nRF) and connect to your Smart Switch.  The switch will be in a Read/Write and State, which is 
    Notify.  IF you go to the switch characteristics screen, which should be 0X00, meaning the LED is off, tap write new value to open the editor.  Enter 01 and hit 
    Done.  The LED should turn on and the value should be 0x01.  If you open the Serial Console you should see a Characteristic event.  If everything works, move on. </li>
  </ul>
 <p>
-2. Add a second musical song to the robot.  
+2. Assemble the BLE Lock  
 </p>
+ <ul>
+  <li> Gather the following items: solenoid lock, 112v, 1A power supply, NPN tansistor, Red LED, Green LED, Two 220 Ohm resistors </li>
+  <li> Make sure you plug the 12V, 1A power supply into the board to power it.  The solenoid lock needs more power than the USB can supply.</li>
+  <li> Complete the build following <a href=https://github.com/MakeBluetooth/ble-lock/blob/master/images/BluetoothLock.png> this diagram</a></li>
+  <li> Install the Arduino file from the repository</li>
+  <li> Open <a href="Binder1.pdf"> this file</a> to test your device with your phone.  If you get the lock to open close, move on.</li>
+ </ul>
 <p>
-3. EXTRA CREDIT-  Decorate Your Robot .
+3. Assemble the Weather Station
 </p>
+  <ul>
+   <li>Gather the following materials: Adafruit BME280 sensor</li>
+   <li>You will need to install the BME280 library.  Sketch>Include Library> Manage Libraries> type in Adafruit BME280 an install </li>
+   <li>Complete the build following <a href="weather.pdf"> these diagrams.</a></li>
+   <li>Upload the Arduino code for the project</li>
+   <li>Open the phone app and see the data.  Open the Serial Monitor to view the temperature, humidity and pressure values.  If you are using 
+    Andriod, come get the iPad and open LightBlue. Android does not convert the bytes of data into floating point numbers to read.  It will be in a hexidecimal character. </li>
+   <li> If you get the project to work, take a picture to document and move to the LED project.</li>
+  </ul> 
 <p>
-4. EXTRA CREDIT- Add sensors to the robot or speed control.
+4. Assemble the NeoPixel LED
 </p>
+   <ul>
+    <li>Gather the following materials: NeoPixel Ring with 16 LEDs, male-to-male red, black and blue wires.</li>
+    <li>NeoPixels is Adafruits name for individually addressable WS2812 LEDs.  Each ring can be set to 16 millions colors.</li>
+    <li>Solder the black wire to the ground, red wire to power, blue wire to Data Input.  Clip a short amount of one side of the wire. </li>
+    <li>Complete the build following<
 </div>
 <br>
 
