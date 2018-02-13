@@ -37,20 +37,12 @@
     and ground wire and it is easy to controller using a controller.  You can purchase single or multi color analog LED strips.  By varying the 
     amount of electricity applied to each color (red, green and blue RGB), you can control the color of each LED.    Addressable strips use communication 
     to each LED or pixel.  This allows for each pixel to be different unlike the analog LED strips.   </p>
+  <br>
   
 <a href=https://learn.adafruit.com/category/leds/> Adafruit LED Projects and Guides</a><br>
-<b><a href=https://learn.sparkfun.com/tutorials/light-emitting-diodes-leds>Guide To LED's </a></b><br>
-
-<ul>
- <a href=https://learn.adafruit.com/introduction-to-bluetooth-low-energy/introduction>Introduction to Bluetooth LE</a><br>
- <a href=https://www.wired.com/insights/2014/11/the-internet-of-things-bigger/> Internet of Things </a> <br>
- <a href=https://www.i-scoop.eu/internet-of-things-guide/>Guide To The Internet of Things</a><br>
- <a href=https://www.forbes.com/sites/jacobmorgan/2014/05/13/simple-explanation-internet-things-that-anyone-can-understand/#2058332f1d09>Explanation of the Internet of Things</a><br>
- <img src="iot1.png"/><br>
-<p>
- <iframe width="560" height="315" src="https://www.youtube.com/embed/ItV08vGqACM" frameborder="0" allowfullscreen></iframe>
-
-</p>
+<a href=https://learn.sparkfun.com/tutorials/light-emitting-diodes-leds>Guide To LED's </a><br>
+ <a href=https://learn.adafruit.com/adafruit-neopixel-uberguide/the-magic-of-neopixels>The Magic of Neopixels</a><br>
+ <a href=https://cdn-learn.adafruit.com/downloads/pdf/adafruit-neopixel-uberguide.pdf> Neopixels Uberguide </a> <br>
 
 <br>
 
@@ -58,81 +50,42 @@
 
 <br>
 <br>
-<b>Assignment- </b><br>
+<b>Assignments- </b><br>
 <div style="margin-left: 2.5%;">
-<p>
-Your task is complete the 4 Bluetooth LE projects and learn how it operates as an introduction to Bluetooth LE.   You will use your Redboard kit and accessories to build a smart switch, lock, 
- weather station and lamp all controlled via Bluetooth LE from your phone.  You will use the LightBlue iOS app and nRF Connect and nRF UART apps for Android.  You will 
- also gain experience adding libraries to your Arduino to make everything work.   
- You will use 
- <a href=https://github.com/MakeBluetooth> this project repository</a> to get all the code for the projects. 
-</p>
- <p>COMPLETE THE FOLLOWING BEFORE YOU BEGIN</p>
- <ul>
-  <li>Download the LightBlue iOS app or nRF Connect and nRF UART app for Android</li>
-  <li>Install the BLE Peripheral library to Arduino libraries.   Sketch> Include Library> Manage Libaries > Type BLEPeripheral into the search 
-   box and click install.</li>
-  <li>Open the <a href=https://github.com/MakeBluetooth> repository </a> for all the code to the projects</li>
- </ul>
- <br>
- <h4> The Bluetooth LE Projects </h4>
-<p>
-1. Assemble the BLE Smart Switch 
+ <p>
+1. Assemble and Design Acrylic Edge Lit Sign
 </p> 
- <ul>
-  <li>Use this <a href=https://raw.githubusercontent.com/MakeBluetooth/smart-light-switch/master/ble-smart-switch.png> diagram </a> to build 
-   your first project.  220 resistor to LED and 10K to switch</li>
-  <li>Open the Bluetooth app on your phone(LightBlue or nRF) and connect to your Smart Switch.  The switch will be in a Read/Write and State, which is 
-   Notify.  IF you go to the switch characteristics screen, which should be 0X00, meaning the LED is off, tap write new value to open the editor.  Enter 01 and hit 
-   Done.  The LED should turn on and the value should be 0x01.  If you open the Serial Console you should see a Characteristic event.  If everything works, move on. </li>
- </ul>
+<ul>
+  <li>Gather the following items: 4" x 6" edge lit acrylic sheet, 12v power supply, 6" led strip, wood block</li>
+  <li>Create your design on CorelDraw.  Remember to mirror your design. </li>
+  <li>Laser engrave your file</li>
+  <li>Slide your acrylic into the led strip carefully as not to destroy the leds in the strip.</li>
+  <li>Place your sign into the wood holder and plug in the 12v power supply.</li>
+  <li>Upload original files (.cdr) and put a picture of the sign on your portfolio</li>
+  <li>Describe the process of how the sign is illuminated and the led strip works.  Is the strip analog or addressable? How do you know?</li>
 <p>
-2. Assemble the BLE Lock  
-</p>
- <ul>
-  <li> Gather the following items: solenoid lock, 112v, 1A power supply, NPN tansistor, Red LED, Green LED, Two 220 Ohm resistors </li>
-  <li> Make sure you plug the 12V, 1A power supply into the board to power it.  The solenoid lock needs more power than the USB can supply.</li>
-  <li> Complete the build following <a href=https://github.com/MakeBluetooth/ble-lock/blob/master/images/BluetoothLock.png> this diagram</a></li>
-  <li> Install the Arduino file from the repository</li>
-  <li> Open <a href="Binder1.pdf"> this file</a> to test your device with your phone.  If you get the lock to open close, move on.</li>
- </ul>
+2. Animation Necklace 
+  <img src="led.gif"/>
+  </p>
 <p>
-3. Assemble the Weather Station
+3. Bluetooth Controlled Goggles 
+  <img src="led6.jpg"/>
+  
 </p>
-  <ul>
-   <li>Gather the following materials: Adafruit BME280 sensor</li>
-   <li>You will need to install the BME280 library.  Sketch>Include Library> Manage Libraries> type in Adafruit BME280 an install </li>
-   <li>Complete the build following <a href="weather.pdf"> these diagrams.</a></li>
-   <li>Upload the Arduino code for the project</li>
-   <li>Open the phone app and see the data.  Open the Serial Monitor to view the temperature, humidity and pressure values.  If you are using 
-    Andriod, come get the iPad and open LightBlue. Android does not convert the bytes of data into floating point numbers to read.  It will be in a hexidecimal character. </li>
-   <li> If you get the project to work, take a picture to document and move to the LED project.</li>
-  </ul> 
+  
 <p>
-4. Assemble the NeoPixel LED
+4. RGB LED Sound and Music Visualizer and Addressable LED Strips
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/I88rr0E85JY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </p>
-   <ul>
-    <li>Gather the following materials: NeoPixel Ring with 16 LEDs, male-to-male red, black and blue wires.</li>
-    <li>NeoPixels is Adafruits name for individually addressable WS2812 LEDs.  Each ring can be set to 16 millions colors.</li>
-    <li>Solder the black wire to the ground, red wire to power, blue wire to Data Input.  Clip a short amount of one side of the wire. </li>
-    <li>Complete the build following<a href=https://github.com/wrafab/advgerber/blob/master/neo.png> this diagram.</a></li>
-    <li>Install the Adafruit NeoPixel library </li>
-    <li>Upload the Arduino code </li>
-    <li>Open the phone application.   Once you have connected to the NeoPixel device, try changing the data using the LED service we created. 
-     Choose color ccc1 characteristic.  Enter 00ff00 and send.  The lights should turn green.  Try other colors like red (ff000) or sky blue (87ceeb). 
-     Connect to the ccc2 which is brightness.  Set different values.  ff is the brightest and 7f is 50% and 00 is off.  Connect to the ccc3 switch characteristic. 
-     Toggle the light on and off by setting this to 01 and 00.   </li>
-    <li> Take picture of your project and document it.   You have finished the projects on Bluetooth LE.</li>
+   <p>
+     5. LED Matrix and 7 Segment Displays
+     <img src="led7.jpg"/>
+  </p>
+     
  </ul>
 </div>
-<br>
- <h3> ASSIGNMENT </h3>
- <ul>
-  <li>1. Document all of the projects with pictures and some of your phone. </li>
-  <li>2. Explain how Bluetooth LE works and why is it an improvement over Bluetooth 1.0 </li>
-  <li>3. List three Bluetooth products you own </li>
-  <li>4. What is a central and peripheral device and explain that in how your phone would pair with the speaker in the WIC?</li>
- </ul>
+
+  
 
 </div>
 <p>
