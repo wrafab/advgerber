@@ -97,9 +97,35 @@
 4. RGB LED Sound and Music Visualizer and Addressable LED Strips
   <iframe width="560" height="315" src="https://www.youtube.com/embed/I88rr0E85JY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </p>
+<ul>
+  <li>Gather the following items: RedBoard, Inventors Kits, Electrolytic Capacitor 1000uf/25V,Sound Detector,Address LED RGB strip</li>
+  <li>Follow this <a href=https://learn.sparkfun.com/tutorials/addressable-rgb-led-music-and-sound-visualizer#final-touches-/>guide</a> to build the sound detector.
+  and this <a href=diagram.jpg/> image</a> for a wiring diagram</li>
+  <li>Code the project</li>
+  <li>Get the sound detector working so that when you make a noise, it lights up the addressable LED strip</li>
+  <li>Take a video or picture lights and sound board working and post it on your portfolio.</li>
+</ul>
+</p>
    <p>
      5. LED Matrix and 7 Segment Displays
      <img src="led7.jpg"/>
+     <ul>
+  <li>Gather the following items: RedBoard, Inventors Kits, MAX7219 4 in 1 LED Matrix</li>
+  <li>You need to get the MAX7219 working with your RedBoard and the challenge is for it to complete two different </li>
+  <li>HINT: Works fine with the MD_MAX72xx Arduino library if the header file MD_MAX72xx.h is altered to
+enable FC16 support. Don't bother using anything else! LEDControl works, but is much less capable.
+
+Change these #defines from their defaults to enable FC16 mode.
+
+#define USE_PAROLA_HW 0
+#define USE_FC16_HW 1
+
+In the Arduino samples, change this define to configure for how many modules you have. A single display has four so:
+#define MAX_DEVICES 4</li>
+  <li>Scroll a message across the MAX7219 matrix.  Create another animation on the matrix.</li>
+        <li>Take a video or picture and post it on your portfolio. Upload your files for both projects.</li>
+          
+</ul>
   </p>
      
  </ul>
